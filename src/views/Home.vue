@@ -37,7 +37,12 @@ export default {
   props: {"title":{type:String, required:false}, "desc":{type:String, default:''}, "text":{type:String, default:''},"isHome":{type:Boolean, default:false}},
   methods: {
     gotoSearch() {
-      this.$router.replace('/searchresult');
+      this.$router.push({
+        name: 'searchresult',
+        query : {
+          keyWords : this.input
+        }
+      });
     }
   },
 };

@@ -36,7 +36,10 @@ export default {
   props: {"title":{type:String, required:true}, "desc":{type:String, default:''}, "isHome":{type:Boolean, default:false}},
   methods: {
     gotoHome(){
-      this.$router.replace('/home');
+      this.$router.push({
+        name: 'home'
+      }
+      );
     }
   }
 

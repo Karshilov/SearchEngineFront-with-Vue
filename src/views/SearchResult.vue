@@ -12,9 +12,24 @@ export default {
   components : {
     background : Background
   }, 
+  data() {
+    return {
+      keyWords : ''
+    }
+  },
+  created () {
+    this.getKeyWords()
+  },
   methods :{
     gotoHome(){
-      this.$router.replace('/home');
+      this.$router.push({
+        name: 'home'
+      }
+      );
+    },
+    getKeyWords() {
+      this.keyWords = this.$route.query.keyWords
+      console.log('keywords', this.keyWords)
     }
   }
 }
