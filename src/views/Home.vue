@@ -108,6 +108,16 @@ export default {
       background:#fff;
       margin:0 auto;
     }
+    @media screen and (max-height : 500px){
+      .decoration-up {
+        margin-top: 100px;
+      }
+    }
+    @media screen and (max-height : 300px){
+      .decoration-up {
+        margin-top: 60px;
+      }
+    }
     @keyframes line-extract {
       from {
         width: 0;
@@ -119,13 +129,12 @@ export default {
 }
 
 .app-content {
-  position: absolute;
   width: 100%;
-  max-width: 1000px;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 120px;
+  margin-top: -150px;
   animation: appContentSlideIn 1s;
   .app-title {
     color: #fff;
@@ -146,7 +155,7 @@ export default {
     color: #214748;
     margin: 0px auto;
   }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 700px) {
     .panel {
       margin: 0 40px;
       margin-top: 20px;
@@ -160,18 +169,18 @@ export default {
       margin-left: 40px;
     }
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     .panel {
       margin: 0 40px;
       margin-top: 20px;
     }
     .app-title {
-      margin-left: 10px;
-      margin-right: 10px;
-      margin-top: 10px;
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top: 40px;
     }
     .app-desc {
-      margin-left: 10px;
+      margin-left: 40px;
     }
     .true-input {
       width: 200px;
