@@ -160,6 +160,23 @@ export default {
       margin-left: 40px;
     }
   }
+  @media screen and (max-width: 600px) {
+    .panel {
+      margin: 0 40px;
+      margin-top: 20px;
+    }
+    .app-title {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+    .app-desc {
+      margin-left: 10px;
+    }
+    .true-input {
+      width: 200px;
+    }
+  }
 }
 @keyframes appContentSlideIn {
     from {
