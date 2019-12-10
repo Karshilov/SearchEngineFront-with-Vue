@@ -13,7 +13,7 @@
       <p v-if="desc" class="app-desc">{{desc}}</p>
       <div v-else style="margin-top:20px;"></div>
       <el-row>
-        <el-input class = "true-input" placeholder="请输入内容" prefix-icon="el-icon-search" v-model="input" clearable></el-input>
+        <el-input class = "true-input" placeholder="请输入内容" prefix-icon="el-icon-search" v-model="input" @keyup.enter.native = "gotoSearch" clearable></el-input>
         <el-button class = "true-button" slot="append"  icon="el-icon-search" @click="gotoSearch"  ></el-button>
       </el-row>
     </div>
