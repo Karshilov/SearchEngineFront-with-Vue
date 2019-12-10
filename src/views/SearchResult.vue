@@ -1,7 +1,7 @@
 <template>
   <background title = "">
     <div class = "app-text">开发中，请稍候……</div>
-      <img class = "app-picture" src = '../assets/faxian.svg'/>
+      <img class = "app-picture" src = '../assets/faxian.svg' @click="gotoTest">
   </background>
 </template>
 
@@ -26,6 +26,14 @@ export default {
         name: 'home'
       }
       );
+    },
+    gotoTest() {
+      this.$router.push({
+        name: 'test',
+        query : {
+          keyWords : this.keyWords
+        }
+      }); 
     },
     getKeyWords() {
       this.keyWords = this.$route.query.keyWords
