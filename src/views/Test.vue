@@ -37,7 +37,7 @@ export default {
     },
     getKeyWords() {
       this.keyWords = this.$route.query.keyWords
-      console.log('keywords', this.keyWords)
+      //console.log('keywords', this.keyWords)
       return this.keyWords;
     },
     getAttributes() {
@@ -48,11 +48,11 @@ export default {
       for(i = 0; i < this.allAttributes.length; i++) {
         if(this.allAttributes[i].indexOf(sTmp) != -1) {
           var pos = this.allAttributes[i].indexOf(sTmp);
-          console.log(pos + sTmp.length);
+          //console.log(pos + sTmp.length);
           aTmp[cnt++] = this.allAttributes[i].substring(0, pos) + this.allAttributes[i].substring(pos + sTmp.length);
         }
       }
-      console.log(aTmp);
+      //console.log(aTmp);
       return aTmp;
     }
   }

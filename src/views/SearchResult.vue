@@ -37,7 +37,7 @@ export default {
     },
     getKeyWords() {
       this.keyWords = this.$route.query.keyWords
-      console.log('keywords', this.keyWords)
+      //console.log('keywords', this.keyWords)
     }
   }
 }
