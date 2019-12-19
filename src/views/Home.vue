@@ -326,8 +326,8 @@ export default {
   }
   .app-chart {
     margin-top : 40px;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
   }
   @media screen and (min-width: 700px) {
     .panel {
